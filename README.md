@@ -9,7 +9,7 @@ I've created knowledge base related to Automation QA Engineering and cloud compu
 - [ ] wiki cloud-PL (Polish)
 - [ ] wiki [cloud-EN] (English)
 
-[QA-PL]: QA-pl_PL.md
-[QA-EN]: QA-en_US.md
+[QA-PL]: quality-assurace-pl_PL.md
+[QA-EN]: quality-assurance-en_US.md
 [cloud-PL]: cloud-pl_PL.md
 [cloud-EN]: cloud-en_US.md
