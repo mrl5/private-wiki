@@ -1,18 +1,18 @@
 # Automation QA engineer - kompendium wiedzy
 
 ## Spis rzeczy
-* [Poziomy testowania](##poziomy-testowania)
-* [Kiedy stosować testy automatyczne](##kiedy-stosować-testy-automatyczne)
-* [Kiedy NIE stosować testów automatycznych](##kiedy-nie-stosować-testów-automatycznych)
-* [Proces automatyzacji](##proces-automatyzacji)
-* [Dobór narzędzia do testowania](##dobór-narzędzia-do-testowania)
-* [Frameworki w automatyzacji](##frameworki-w-automatyzacji)
-* [Dobre praktyki testów automatycznych](##dobre-praktyki-testów-automatycznych)
-* [Dzień z życia "automatyzera"](##dzień-z-życia-automatyzera)
-* [Etapy idealnego testowania](##etapy-idealnego-testowania)
-* [Możliwe ścieżki kariery](##możliwe-ścieżki-kariery)
-* [Rady od Patryka Hemperka](##rady-od-patryka-hemperka)
-* [Zobacz też](##zobacz-też)
+* [Poziomy testowania](#poziomy-testowania)
+* [Kiedy stosować testy automatyczne](#kiedy-stosować-testy-automatyczne)
+* [Kiedy NIE stosować testów automatycznych](#kiedy-nie-stosować-testów-automatycznych)
+* [Proces automatyzacji](#proces-automatyzacji)
+* [Dobór narzędzia do testowania](#dobór-narzędzia-do-testowania)
+* [Frameworki w automatyzacji](#frameworki-w-automatyzacji)
+* [Dobre praktyki testów automatycznych](#dobre-praktyki-testów-automatycznych)
+* [Dzień z życia "automatyzera"](#dzień-z-życia-automatyzera)
+* [Etapy idealnego testowania](#etapy-idealnego-testowania)
+* [Możliwe ścieżki kariery](#możliwe-ścieżki-kariery)
+* [Rady od Patryka Hemperka](#rady-od-patryka-hemperka)
+* [Zobacz też](#zobacz-też)
 
 
 ## Poziomy testowania
