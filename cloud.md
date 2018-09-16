@@ -13,6 +13,7 @@ Type of internet based computing that provides shared computer processing resour
 * [LXC](#lxc)
 * [Docker](#docker)
 * [Kubernetes](#kubernetes)
+* [SaltStack](#saltstack)
 * [See also](#see-also)
 
 ## OpenStack
@@ -51,11 +52,13 @@ __VM emulates hardware and kernel__ (see picture on the right) - this can have a
 ## Cgroups and namespaces
 (source: [difference between cgroups and namespaces])
 
->-Cgroups = limits __how much__ you can use
->-namespaces = limits __what you can see__ (and therefore use)
+>- Cgroups = limits __how much__ you can use
 
->-cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
->-namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that __they have their own isolated instance of the global resource__.
+>- namespaces = limits __what you can see__ (and therefore use)
+
+>- cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
+
+>- namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that __they have their own isolated instance of the global resource__.
 
 ## LXC
 ![LXC](https://upload.wikimedia.org/wikipedia/commons/4/40/Linux_Containers_logo.png)
