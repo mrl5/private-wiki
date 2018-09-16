@@ -51,6 +51,12 @@ VM emulates hardware and kernel (see picture on the right) - this can have a neg
 ## Cgroups and namespaces
 (source: [difference between cgroups and namespaces])
 
+>-Cgroups = limits how much you can use
+>-namespaces = limits what you can see (and therefore use)
+
+>-cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
+>-namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.
+
 ## LXC
 todo
 
