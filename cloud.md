@@ -46,19 +46,27 @@ Type of internet based computing that provides shared computer processing resour
 
 [img source](https://www.veeam.com/blog/why-virtual-machine-backups-different.html)
 
-VM emulates hardware and kernel (see picture on the right) - this can have a negative impact on a performance.
+*VM emulates hardware and kernel* (see picture on the right) - this can have a *negative impact on a performance*.
 
 ## Cgroups and namespaces
 (source: [difference between cgroups and namespaces])
 
->-Cgroups = limits how much you can use
->-namespaces = limits what you can see (and therefore use)
+>-Cgroups = limits *how much* you can use
+>-namespaces = limits *what you can see* (and therefore use)
 
 >-cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
->-namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.
+>-namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that *they have their own isolated instance of the global resource*.
 
 ## LXC
-todo
+!(LXC)[https://upload.wikimedia.org/wikipedia/commons/4/40/Linux_Containers_logo.png]
+
+(source: [LXC])
+
+>LXC (Linux Containers) is an operating-system-level virtualization method for running multiple isolated Linux systems (containers) on a control host *using a single Linux kernel*.
+
+>The Linux kernel provides the cgroups *functionality that allows limitation and prioritization of resources* (CPU, memory, block I/O, network, etc.) *without the need for starting any virtual machines*
+
+>LXC combines the kernel's cgroups and support for isolated namespaces to *provide an isolated environment for applications*.
 
 ## Docker
 todo
@@ -68,12 +76,13 @@ todo
 
 ## See also
 - [What Is OpenStack | OpenStack Tutorial For Beginners | OpenStack Training | Edureka] (YouTube)
+- [Containers: cgroups, Linux kernel namespaces, ufs, Docker, and intro to Kubernetes pods] (YouTube)
 - [Virtual Machine] (Wikipedia)
 - [difference between cgroups and namespaces] (StackOverflow)
-- [Containers: cgroups, Linux kernel namespaces, ufs, Docker, and intro to Kubernetes pods] (YouTube)
-
+- [LXC] (Wikipedia)
 
 [What Is OpenStack | OpenStack Tutorial For Beginners | OpenStack Training | Edureka]: https://www.youtube.com/watch?v=Kfj5XiNdJN0
 [difference between cgroups and namespaces]: https://stackoverflow.com/a/34825184
 [Virtual Machine]: https://en.wikipedia.org/wiki/Virtual_machine
 [Containers: cgroups, Linux kernel namespaces, ufs, Docker, and intro to Kubernetes pods]: https://www.youtube.com/watch?v=el7768BNUPw
+[LXC]: https://en.wikipedia.org/wiki/LXC
