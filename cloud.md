@@ -69,7 +69,10 @@ Type of internet based computing that provides shared computer processing resour
 >LXC combines the kernel's cgroups and support for isolated namespaces to *provide an isolated environment for applications*.
 
 ## Docker
-todo
+![Docker](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
+
+- creates the containers with the defined versions of software (e.g. Apache HTTP server)
+- unifies environments (build, test) across machines
 
 ## Kubernetes
 todo
@@ -80,9 +83,11 @@ todo
 - [Virtual Machine] (Wikipedia)
 - [difference between cgroups and namespaces] (StackOverflow)
 - [LXC] (Wikipedia)
+- [What is Docker?] (YouTube)
 
 [What Is OpenStack | OpenStack Tutorial For Beginners | OpenStack Training | Edureka]: https://www.youtube.com/watch?v=Kfj5XiNdJN0
 [difference between cgroups and namespaces]: https://stackoverflow.com/a/34825184
 [Virtual Machine]: https://en.wikipedia.org/wiki/Virtual_machine
 [Containers: cgroups, Linux kernel namespaces, ufs, Docker, and intro to Kubernetes pods]: https://www.youtube.com/watch?v=el7768BNUPw
 [LXC]: https://en.wikipedia.org/wiki/LXC
+[What is Docker?]: https://www.youtube.com/watch?v=RyxXe5mbzlU
