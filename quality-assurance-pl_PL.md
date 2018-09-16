@@ -112,7 +112,7 @@ Framework - zbiór wytycznych automatyzacji, które pomagają w:
 ## Dzień z życia "automatyzera"
 (źródło: [Przychodzi tester na rozmowę...])
 
-![dzien-automatyzera](dzien-automatyzera.png)
+![dzien-automatyzera](img/dzien-automatyzera.png)
 
 ## Etapy idealnego testowania
 (źródło: [Testowanie oprogramowania w świecie idealnym])
@@ -138,7 +138,7 @@ Framework - zbiór wytycznych automatyzacji, które pomagają w:
 ## Możliwe ścieżki kariery
 #### (źródło: [Przychodzi tester na rozmowę...])
 
-![sciezka kariery testera](sciezka-kariery-testera.png)
+![sciezka kariery testera](img/sciezka-kariery-testera.png)
 
 #### (źródło: [Od testera do... czyli możliwe ścieżki kariery])
 >1. Analityk testów – jest to osoba w zespole odpowiedzialna za projektowanie testów, scenariuszy testowych oraz planów testów. Często podczas procesu projektowania ma kontakt z klientem. To analityk wyznacza główne kierunki, w których dana funkcjonalność powinna zostać przetestowana. Krótko mówiąc, taka osoba przekłada wymagania klienta na testowane scenariusze.
