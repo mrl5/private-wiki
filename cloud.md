@@ -46,27 +46,27 @@ Type of internet based computing that provides shared computer processing resour
 
 [img source](https://www.veeam.com/blog/why-virtual-machine-backups-different.html)
 
-*VM emulates hardware and kernel* (see picture on the right) - this can have a *negative impact on a performance*.
+__VM emulates hardware and kernel__ (see picture on the right) - this can have a __negative impact on a performance__.
 
 ## Cgroups and namespaces
 (source: [difference between cgroups and namespaces])
 
->-Cgroups = limits *how much* you can use
->-namespaces = limits *what you can see* (and therefore use)
+>-Cgroups = limits __how much__ you can use
+>-namespaces = limits __what you can see__ (and therefore use)
 
 >-cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
->-namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that *they have their own isolated instance of the global resource*.
+>-namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that __they have their own isolated instance of the global resource__.
 
 ## LXC
-!(LXC)[https://upload.wikimedia.org/wikipedia/commons/4/40/Linux_Containers_logo.png]
+![LXC](https://upload.wikimedia.org/wikipedia/commons/4/40/Linux_Containers_logo.png)
 
 (source: [LXC])
 
->LXC (Linux Containers) is an operating-system-level virtualization method for running multiple isolated Linux systems (containers) on a control host *using a single Linux kernel*.
+>LXC (Linux Containers) is an operating-system-level virtualization method for running multiple isolated Linux systems (containers) on a control host __using a single Linux kernel__.
 
->The Linux kernel provides the cgroups *functionality that allows limitation and prioritization of resources* (CPU, memory, block I/O, network, etc.) *without the need for starting any virtual machines*
+>The Linux kernel provides the cgroups __functionality that allows limitation and prioritization of resources__ (CPU, memory, block I/O, network, etc.) __without the need for starting any virtual machines__
 
->LXC combines the kernel's cgroups and support for isolated namespaces to *provide an isolated environment for applications*.
+>LXC combines the kernel's cgroups and support for isolated namespaces to __provide an isolated environment for applications__.
 
 ## Docker
 ![Docker](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
@@ -75,7 +75,18 @@ Type of internet based computing that provides shared computer processing resour
 - unifies environments (build, test) across machines
 
 ## Kubernetes
-todo
+![Kubernetes](https://www.agconnect.nl/sites/ag/files/styles/article_main_image/public/KubernetesLogo.jpg?itok=G5-y6hDn)
+
+A platform for working with containers:
+- deployment
+- scaling
+- monitoring
+
+#### Problem
+Instead of 3 servers you have 40 servers. How do you decide what containers go where
+
+#### Solution
+Use kubernetes to do it for you.
 
 ## See also
 - [What Is OpenStack | OpenStack Tutorial For Beginners | OpenStack Training | Edureka] (YouTube)
@@ -84,6 +95,7 @@ todo
 - [difference between cgroups and namespaces] (StackOverflow)
 - [LXC] (Wikipedia)
 - [What is Docker?] (YouTube)
+- [What is Kubernetes] (YouTube)
 
 [What Is OpenStack | OpenStack Tutorial For Beginners | OpenStack Training | Edureka]: https://www.youtube.com/watch?v=Kfj5XiNdJN0
 [difference between cgroups and namespaces]: https://stackoverflow.com/a/34825184
@@ -91,3 +103,4 @@ todo
 [Containers: cgroups, Linux kernel namespaces, ufs, Docker, and intro to Kubernetes pods]: https://www.youtube.com/watch?v=el7768BNUPw
 [LXC]: https://en.wikipedia.org/wiki/LXC
 [What is Docker?]: https://www.youtube.com/watch?v=RyxXe5mbzlU
+[What is Kubernetes]: https://www.youtube.com/watch?v=R-3dfURb2hA
