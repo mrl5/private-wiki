@@ -167,6 +167,7 @@ Framework - zbiór wytycznych automatyzacji, które pomagają w:
 - szkól się, bierz udział w konferencjach
 
 ## Zobacz też
+- https://www.atlassian.com/blog/add-ons/deliver-faster-and-better-software-using-test-automation
 - Anna Warzecha [Testowanie oprogramowania w świecie idealnym] (blog.testuj.pl)
 - Natalia Pawlak - [Od testera do... czyli możliwe ścieżki kariery] (blog.testuj.pl)
 - Patryk Hemperek - [Przychodzi tester na rozmowę...] (YouTube)
