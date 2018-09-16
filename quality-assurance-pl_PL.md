@@ -7,6 +7,7 @@
 * [Proces automatyzacji](#proces-automatyzacji)
 * [Dobór narzędzia do testowania](#dobór-narzędzia-do-testowania)
 * [Frameworki w automatyzacji](#frameworki-w-automatyzacji)
+* [Granica między narzędziem a frameworkiem do automatyzacji testów](#granica-między-narzędziem-a-frameworkiem-do-automatyzacji-testów)
 * [Dobre praktyki testów automatycznych](#dobre-praktyki-testów-automatycznych)
 * [Dzień z życia "automatyzera"](#dzień-z-życia-automatyzera)
 * [Etapy idealnego testowania](#etapy-idealnego-testowania)
@@ -86,12 +87,17 @@ Framework - zbiór wytycznych automatyzacji, które pomagają w:
 - poprawia możliwość ponownego użycia
 
 ### Typy frameworków używanych w testach automatycznych
-(źródło: [Co to jest zautomatyzowane testowanie?])
 
 - *Data Driven Automation Framework*
 - *Keyword Driven Automation Framework*
 - *Modular Automation Framework*
 - *Hybrid Automation Framework*
+
+## Granica między narzędziem a frameworkiem do automatyzacji testów
+(źródło: [wikipedia-EN](https://en.wikipedia.org/wiki/Test_automation))
+
+- narzędzia są zaprojektowane na konkretne środowisko (np. system operacyjny)
+- framework nie jest narzędziem, dzięki któremu można wykonywać konkretne zadanie. Jest to infrastruktura, która dostarcza rozwiązań gdzie różne narzędzia mogą funkcjonować w sposób ujednolicony
 
 ## Dobre praktyki testów automatycznych
 (źródło: [Co to jest zautomatyzowane testowanie?])
@@ -164,6 +170,7 @@ Framework - zbiór wytycznych automatyzacji, które pomagają w:
 - Tomasz Konieczny - [QA Engineer - czyli tester do zadań specjalnych] (bulldogjob.pl)
 - [Co to jest zautomatyzowane testowanie?] (YouTube)
 - https://en.wikipedia.org/wiki/Software_testing#Testing_methods
+- https://en.wikipedia.org/wiki/Test_automation
 
 [Przychodzi tester na rozmowę...]: https://www.youtube.com/watch?v=gBYGD4TygFk
 [Od testera do... czyli możliwe ścieżki kariery]: https://blog.testuj.pl/od-testera-do-czyli-mozliwe-sciezki-kariery
