@@ -88,6 +88,13 @@ Instead of 3 servers you have 40 servers. How do you decide what containers go w
 #### Solution
 Use kubernetes to do it for you.
 
+## SaltStack
+ToDo
+
+Meanwhile check out:
+- https://vimeo.com/289137260
+- https://searchitoperations.techtarget.com/definition/SaltStack
+
 ## See also
 - [What Is OpenStack | OpenStack Tutorial For Beginners | OpenStack Training | Edureka] (YouTube)
 - [Containers: cgroups, Linux kernel namespaces, ufs, Docker, and intro to Kubernetes pods] (YouTube)
