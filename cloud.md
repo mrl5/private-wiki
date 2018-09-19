@@ -6,6 +6,10 @@ Type of internet based computing that provides shared computer processing resour
 - PaaS: platform as a service
 - SaaS: software as a service
 
+![cloud services](img/cloud-services.png)
+
+(source: [What is IaaS?](https://azure.microsoft.com/en-us/overview/what-is-iaas/))
+
 ## Table of contents
 * [OpenStack](#openstack)
 * [VM](#vm)
@@ -92,7 +96,10 @@ Instead of 3 servers you have 40 servers. How do you decide what containers go w
 Use kubernetes to do it for you.
 
 ## SaltStack
-ToDo
+SaltStack automates repeated system administrative and code deployment tasks, eliminating manual processes in a way that can reduce errors that occur when IT organizations configure systems.
+
+
+![DriveTrain](img/DriveTrain.png)
 
 Meanwhile check out:
 - https://vimeo.com/289137260
