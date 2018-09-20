@@ -113,6 +113,7 @@ Meanwhile check out:
 - [LXC] (Wikipedia)
 - [What is Docker?] (YouTube)
 - [What is Kubernetes] (YouTube)
+- [Understanding the Difference Between Virtualization and Containers] (YouTube)
 
 [What Is OpenStack | OpenStack Tutorial For Beginners | OpenStack Training | Edureka]: https://www.youtube.com/watch?v=Kfj5XiNdJN0
 [difference between cgroups and namespaces]: https://stackoverflow.com/a/34825184
@@ -121,3 +122,4 @@ Meanwhile check out:
 [LXC]: https://en.wikipedia.org/wiki/LXC
 [What is Docker?]: https://www.youtube.com/watch?v=RyxXe5mbzlU
 [What is Kubernetes]: https://www.youtube.com/watch?v=R-3dfURb2hA
+[Understanding the Difference Between Virtualization and Containers]: https://www.youtube.com/watch?v=rfjmeakbeH8
