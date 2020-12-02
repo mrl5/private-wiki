@@ -81,6 +81,19 @@
   * [Cloud Inquisitor](https://github.com/RiotGames/cloud-inquisitor) - resource ownership, domain hijacking
   * [Asecure](https://asecure.cloud/) - web app for generating security-related configs
   * [Terraform-aws-secure-baseline](https://github.com/nozaq/terraform-aws-secure-baseline) - Terraform module to set up your AWS account with the resonably secure configuration baseline
+* (AWS re:Invent 2020) Ten easy and effective ways to secure your AWS
+  environment:
+  1. Amazon S3 Block Public Access
+  2. Use federation - make all your IAM credentials temporary
+  3. Collect AWS CloudTrail for your entire AWS organization
+  4. Know how to query a CloudTrail
+  5. Tag your subnets for scalable control over connectivity
+  6. Centrally manage network security with AWS Firewall Manager
+  7. Assert network origin in your AWS IAM policies
+  8. Use the network to keep your data where you want
+  9. Connect to your Amazon EC2 instances without SSH keys: do this `aws ssm
+     start-session --target i-01234567` instead of `ssh user@host`
+  10. Monitor DNS from your VPC with Amazon Route 53 Resolver Query Logging
 
 
 ## MACs
