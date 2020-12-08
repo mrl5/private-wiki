@@ -5,9 +5,9 @@ A long time ago in a galaxy far, far away Unix was born ...
 There is a history about Grand Master Peter H. Salus and his version of *Unix
 Philosophy*:
 
-> Write programs that do one thing and do it well.
-> Write programs to work together.
-> Write programs to handle text streams, because that is a universal interface.
+> * Write programs that do one thing and do it well.
+> * Write programs to work together.
+> * Write programs to handle text streams, because that is a universal interface.
 
 
 *But the hearts of men are easily corrupted ...* **O**bject **O**riented
@@ -20,15 +20,16 @@ Until when chance came: the rise of the Web, SaaS, and Open Source
 The time for **P**lugin **O**riented **P**rogramming has come. Grand Master
 Thomas S Hatch said:
 
-> Write programs that do one thing and do it well.
-> Write programs to work together.
-> Write programs to expose interfaces that can be easily merged together.
+> * Write programs that do one thing and do it well.
+> * Write programs to work together.
+> * Write programs to expose interfaces that can be easily merged together.
 
 
 ## Table of contents
 * [HUBs, POPs, WTFs](#hubs-pops-wtfs)
 * [Luke use the pop-seed](#luke-use-the-seed)
-* [Sometimes Jedi must use classes anyway](sometimes-jedi-must-use-classes-anyway)
+* [Sometimes Jedi must use classes anyway](#sometimes-jedi-must-use-classes-anyway)
+* [Using namespaces](#using-namespaces)
 
 
 ## HUBs, POPs, WTFs
