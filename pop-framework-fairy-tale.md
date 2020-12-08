@@ -27,9 +27,10 @@ Thomas S Hatch said:
 
 ## Table of contents
 * [HUBs, POPs, WTFs](#hubs-pops-wtfs)
-* [Luke use the pop-seed](#luke-use-the-seed)
+* [Luke use the pop-seed](#luke-use-the-pop-seed)
 * [Sometimes Jedi must use classes anyway](#sometimes-jedi-must-use-classes-anyway)
 * [Using namespaces](#using-namespaces)
+* [Using the force aka incorporating CLI](#using-the-force-aka-incorporating-cli)
 
 
 ## HUBs, POPs, WTFs
@@ -40,7 +41,7 @@ Thomas S Hatch said:
 3. `pop` patterns: https://pop.readthedocs.io/en/latest/topics/sub_patterns.html
 
 
-## Luke use the seed
+## Luke use the pop-seed
 
 todo: *Story about pop-seed, project structure, WTFs encounterd*
 
@@ -49,6 +50,12 @@ todo: *Story about pop-seed, project structure, WTFs encounterd*
 
 todo: *Story about integrating python classes into HUB*
 
+
 ## Using namespaces
 
 todo: *story about referencing external functions and variables*
+
+
+## Using the force aka incorporating CLI
+
+todo: *story about CLI_CONF, flags etc*
