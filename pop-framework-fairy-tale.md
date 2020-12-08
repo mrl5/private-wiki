@@ -2,23 +2,27 @@
 
 A long time ago in a galaxy far, far away Unix was born ...
 
-There is a legend about Grand Master Peter H. Salus and his version of Unix
-Philosophy:
+There is a history about Grand Master Peter H. Salus and his version of *Unix
+Philosophy*:
 
-> * Write programs that do one thing and do it well
-> * Write programs to work together
-> * Write programs to handle text streams, because that is a universal interface
+> Write programs that do one thing and do it well.
+> Write programs to work together.
+> Write programs to handle text streams, because that is a universal interface.
 
 
-Later **O**bject **O**riented **P**rogramming was born. However after OOP glory
-days the rise of the Web, SaaS, and Open Source was to begun ...
+*But the hearts of men are easily corrupted ...* **O**bject **O**riented
+**P**rogramming was born. *Some things that should not have been forgotten were
+lost* ... *History about __Unix Philosophy__ became legend, legend became myth
+...*
+
+Until when chance came: the rise of the Web, SaaS, and Open Source
 
 The time for **P**lugin **O**riented **P**rogramming has come. Grand Master
-Thomas S Hatch once said:
+Thomas S Hatch said:
 
-> * Write programs that do one thing and do it well
-> * Write programs to work together
-> * Write programs to expose interfaces that can be easily merged together
+> Write programs that do one thing and do it well.
+> Write programs to work together.
+> Write programs to expose interfaces that can be easily merged together.
 
 
 ## Table of contents
