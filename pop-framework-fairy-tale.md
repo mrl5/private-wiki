@@ -72,26 +72,69 @@ This locations are most interesting:
 2. `./pop_star/pop_star/init.py`
 3. `./pop_star/pop_star/contracts/` covered in [Contracts]
 
-For further guidance on writing first pop app check: https://pop.readthedocs.io/en/latest/tutorial/quickstart.html
+For further guidance on writing first pop app check:
+[pop quickstart](https://pop.readthedocs.io/en/latest/tutorial/quickstart.html)
 
+Getting back to project structure. `./run.py` and `./pop_star/scripts.py` got
+me confused.
+
+1. if the `pop-star` is a standalone project then user cares only about
+   `run.py` and `run.py --help` (srly)
+2. if the `pop-star` is a part of [Multi plugin project] then
+   `./pop_star/scripts.py` is not even in the `hub`
+
+Let's be pragmatic now, I like `bin/` folder that was not created by
+`pop-seed`. Lets have executables there.
+
+Making a long story short, you can be a rebel and do:
+```
+rm -v ./pop_star/scripts.py
+mkdir bin
+mv -v run.py bin/
+chmod +x bin/run.py
+vim setup.py # to edit entry_points
+```
+
+*P.S.*
+
+Even if your project is *One ring to rule them all, one ring to find them, One
+ring to bring them all.* pls also `mkdir tests` :) Even if you don't mind
+having this dir empty, it might be a nice invitation for some contributor that
+want's to make sure that his changes wont be broken in the future. Well written
+unit tests are a nice way for:
+
+1. Showing developers how to use your code
+2. Having contracts with the code base (borrowed that from [this Pieter
+   Hintjens speach](https://www.youtube.com/watch?v=O8CbzKREAj4&t=29m05s))
+3. Nice way for an CI in GitHub/GitLab
+
+And don't go Dark Side with unit tests - 100% code coverage is impossible and
+counter productive IMO (however I really like
+[TDD](https://en.wikipedia.org/wiki/Test-driven_development))
+
+```
+mkdir tests/ && touch tests/.gitignore
+```
 
 ## Using namespaces
 
-https://pop-book.readthedocs.io/en/latest/main/plugable.html#the-hub-and-the-namespace
+[Chapter from `pop-book` about the hub and the
+namespace](https://pop-book.readthedocs.io/en/latest/main/plugable.html#the-hub-and-the-namespace)
 
-todo: *story about referencing external functions and variables + story about
-puting things into the hub*
+Generally speaking I see it as [a
+matryoshka](https://giphy.com/gifs/girly-nest-nesting-3oEjHWPTo7c0ajPwty)!
 
-Lets define `serialize_input()` as private function (limited only to file) and
-public function `sing_that_hit()` (exposed to hub)
+Some example now: lets define `serialize_input()` as private function (limited
+only to file) and public function `sing_that_hit()` (exposed to `hub`).
 
-so this is in `./pop_star/pop_star/greatest_hits.py`
+So this is in `./pop_star/pop_star/greatest_hits.py`
 ```
 greatest_hits = {
     "yellow_submarine": "we are living",
     "dirty_deeds": "done dirt cheap",
     "i_shot_the_sherrif": "but I did not shoot the deputy",
-    "only_you_can_cool_my_desire": "Oh oh oh, I'm on fire\nWoo ooh ooh",
+    "only_you_can_cool_my_desire": "Oh oh oh, I'm on fire Woo ooh ooh",
+    "bird": "Bird, bird, bird, b-bird's the word A-well-a, bird, bird, bird, the bird is the word",
 }
 
 def serialize_input(input):
@@ -115,7 +158,9 @@ def how_did_it_go(hub, phrase):
 
 ## Sometimes Jedi must use classes anyway
 
-From https://pop-book.readthedocs.io/en/latest/main/instances.html:
+Taken from [pop-book about
+instances](https://pop-book.readthedocs.io/en/latest/main/instances.html):
+
 > Classes should be used in Plugin Oriented Programming only when it is
 > necessary to either extend an existing library, or to create a type like
 > interface that is critical to an application. Classes should not be used for
@@ -137,27 +182,99 @@ class SerializerError(TypeError):
 WOW, now we have `SerializerError` class available in `hub.pop_star` namespace.
 Just remember to use classes if you REALLY need them, otherwise you will
 convert to the Dark Side:
+
 > The Dark Side of the Force is a pathway to many abilities some consider to be unnatural.
 >
 > Once you start down the dark path, forever will it dominate your destiny.
 
+Well.. if you really want it:
+```
+def __init__(hub):
+    global HUB
+    HUB = hub
+
+
+class Sith():
+    def __init__(self):
+        self.hub = HUB
+        self.lightning = "something something dark side"
+
+    def do_force_lightning(self, target):
+        print("UNLIMITED POWER !!!")
+        return self.lightning
+```
+
 
 ## Using the force aka incorporating CLI
 
-todo: *story about CLI_CONF, flags etc*
-https://pop-config.readthedocs.io/en/latest/topics/quickstart.html#the-config-dictionary
+[pop-config about conf.py](https://pop-config.readthedocs.io/en/latest/topics/quickstart.html#understanding-the-conf-py)
+
+Magic is done in several places:
+1. Defining flags, args and subcommands in `./pop_star/conf.py`
+  * `CLI_CONF` define flags and positional args here
+  * `SUBCOMMANDS` define `git cli`-like subcommands here
+2. adding magic lines in exposed CLI scripts:
+```
+import pop.hub
+
+
+hub = pop.hub.Hub()
+hub.pop.sub.add(dyne_name="pop_star")
+# hub.pop_star.init.cli()
+hub.pop.config.load(["pop_star"], cli="pop_star")
+```
+3. referring to flags and args values inside the plugin code:
+```
+def do_stuff(hub):
+    some_arg = hub.OPT.pop_star.some_arg
+    print(f"I just got {some_arg}")
+```
 
 
 ## Multi plugin project
 
-https://pop-book.readthedocs.io/en/latest/main/plugable.html#app-merging
-todo: *story about project that uses external plugins*
+* todo: *story about project that uses external plugins*
+* refs: https://pop-book.readthedocs.io/en/latest/main/plugable.html#app-merging
 
 
 ## Contracts
 
-todo: *story about contracts and some usecases for them*
-https://pop-book.readthedocs.io/en/latest/main/contracts.html
+* [pop-book about contracts](https://pop-book.readthedocs.io/en/latest/main/contracts.html)
+* [pop docs about contracts](https://pop.readthedocs.io/en/latest/topics/contracts.html)
+
+I like this concept and the implementation. Similar to [Proxy() - JavaScript's
+standard, built-in
+object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy).
+
+There is one **pop contracts gotcha** described in [GitLab
+issue #95](https://gitlab.com/saltstack/pop/pop/-/issues/95)
+
+Summing up, there are:
+* `sig_<func>` (signature) that:
+  * forces function implementation
+  * verifies type annotations (it's not verifying the type itself but forces
+   implementation to have the same type annotation)
+  * looks like it does not force `async`
+  * verifies `*args`, `**kwargs` and parameter names
+* wrappers, that can be applied to one function or all functions in a module:
+  * `pre_<func>` + global `pre`
+  ```
+  def pre_do_stuff_with_input_json(hub, ctx):
+      input_json = ctx.args[1]
+          validate(instance=input_json, schema=input_json_schema)
+  ```
+  * `call_<func>` + global `call`. Encountered 2 gotchas
+  ```
+  async def call_query_cpe_match(hub, ctx):
+      quasi_cpe = ctx.args[1]
+      if quasi_cpe is None:
+          return []
+      # gotcha 1) remember to always return
+      # gotcha 2) return await
+      return await ctx.func(*ctx.args, **ctx.kwargs)
+  ```
+  * `post_<func>` + global `post`
+* a plugin can also volunteer itself to take on a specific contract
 
 
 
