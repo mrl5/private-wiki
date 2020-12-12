@@ -2,6 +2,7 @@
 
 * [Pieter Hintjens] - his speeches are pure gold. Love his philosophy
   - [Distribution, Scale and Flexibility with ZeroMQ](https://www.youtube.com/watch?v=yhGXJ9Jt3-A)
+  - [Keynote | EuroSciPy 2015 | Pieter Hintjens](https://www.youtube.com/watch?v=O8CbzKREAj4)
   - [Homepage](http://hintjens.com/)
   - keywords:
     - encouraging failure + learning from failure = pattern for learning
