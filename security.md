@@ -16,6 +16,7 @@
 ## Table of contents
 * [Fundamentals](#fundamentals)
 * [AWS](#aws)
+* [Docker and Kubernetes](#docker-and-kubernetes)
 * [MACs](#macs)
 * [Notable Literature](#notable-literature)
 * [Programming](#programming)
@@ -94,6 +95,20 @@
   9. Connect to your Amazon EC2 instances without SSH keys: do this `aws ssm
      start-session --target i-01234567` instead of `ssh user@host`
   10. Monitor DNS from your VPC with Amazon Route 53 Resolver Query Logging
+
+
+## Docker and Kubernetes
+* [OWASP Docker Security Cheat
+  Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
+  (they also mention Kubernetes)
+* [A journey to Kubernetes
+  security](https://developer.ibm.com/articles/journey-to-kubernetes-security/)
+* [Set up runtime container security monitoring with Falco and
+  Kubernetes](https://developer.ibm.com/tutorials/installing-and-using-sysdig-falco/) - Falco
+  is a cloud-native runtime security system that works with both
+  containers and raw Linux hosts. Falco works by looking at file changes,
+  network activity, the process table, and other data for suspicious behavior
+  and then sending alerts through a pluggable back end.
 
 
 ## MACs
