@@ -109,6 +109,7 @@
   containers and raw Linux hosts. Falco works by looking at file changes,
   network activity, the process table, and other data for suspicious behavior
   and then sending alerts through a pluggable back end.
+* [Distroless Docker images](https://github.com/GoogleContainerTools/distroless)
 
 
 ## MACs
