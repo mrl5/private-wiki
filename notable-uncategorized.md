@@ -4,8 +4,10 @@
 - [Pieter Hintjens philosophy](#pieter-hintjens-philosophy)
 - [Plugin Oriented Programming](#plugin-oriented-programming)
 - [Netflix Guide to Microservices](#netflix-guide-to-microservices)
+- [Command-query Separation](#command-query-separation)
 - [API first](#api-first)
 - [Kubernetes random](#kubernetes-random)
+
 
 ## Pieter Hintjens philosophy
 [Pieter Hintjens](https://en.wikipedia.org/wiki/Pieter_Hintjens) - his speeches
@@ -52,6 +54,23 @@ Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM)
   - polyglot & containers (the paved road vs off-road) -> cost of variance
   - velocity with confidence
   - [Conway's law] -> solution's first, team second
+
+
+## Command-query Separation
+[7 Reasons why your microservices should use Event Sourcing & CQRS - Hugh
+McKee](https://www.youtube.com/watch?v=wBvH7foXXUY)
+- System of loosely coupled services
+  1. independently deployable
+  2. owns its schema
+  3. API only access to data
+- 7 Reasons why to use Event Sourcing & CQRS:
+  1. smooth transition from DDD & event storming to implementation
+  2. reduce service coupling
+  3. break the read vs write performance bottleneck
+  4. elevate the concurrency barrier
+  5. simplify and harden messaging
+  6. eliminate service coupling
+  7. graduate from IT nursery
 
 
 ## API first
