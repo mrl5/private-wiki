@@ -5,6 +5,7 @@
 - [Plugin Oriented Programming](#plugin-oriented-programming)
 - [Netflix Guide to Microservices](#netflix-guide-to-microservices)
 - [Command-query Separation](#command-query-separation)
+- [Patterns of Effective Teams](#patterns-of-effective-teams)
 - [API first](#api-first)
 - [Kubernetes random](#kubernetes-random)
 
@@ -71,6 +72,11 @@ McKee](https://www.youtube.com/watch?v=wBvH7foXXUY)
   5. simplify and harden messaging
   6. eliminate service coupling
   7. graduate from IT nursery
+
+
+## Patterns of Effective Teams
+[GOTO 2017 • Patterns of Effective Teams • Dan
+North](https://www.youtube.com/watch?v=lvs7VEsQzKY)
 
 
 ## API first
