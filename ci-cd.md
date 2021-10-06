@@ -1,5 +1,9 @@
 # Continuous Integration, Continuous Delivery, Continuous Deployment
 
+1. https://www.youtube.com/watch?v=2TTU5BB-k9U
+2. https://www.youtube.com/watch?v=1er2cjUq1UI
+3. https://www.youtube.com/watch?v=LNLKZ4Rvk8w
+
 ![cycle](https://3kllhk1ibq34qk6sp3bhtox1-wpengine.netdna-ssl.com/wp-content/uploads/01-CicloDesenvolvimento-600x600.png)
 
 [source](https://www.atlassian.com/blog/add-ons/deliver-faster-and-better-software-using-test-automation)
