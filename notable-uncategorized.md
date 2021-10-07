@@ -80,12 +80,8 @@ North](https://www.youtube.com/watch?v=lvs7VEsQzKY)
 
 
 ## API first
-- [Zalando guidelines](https://opensource.zalando.com/restful-api-guidelines/#api-first)
+- [building apis prvate wiki](apis.md)
 - [Enterprise Integration Using REST](https://martinfowler.com/articles/enterpriseREST.html)
-- [Open API tools and integrations](https://swagger.io/tools/open-source/open-source-integrations/)
-- [connexion](https://github.com/zalando/connexion) framework that
-  automagically handles HTTP requests based on  OpenAPI Specification
-- [Crafting Effective Microservices in Python](https://engineering.zalando.com/posts/2016/12/crafting-effective-microservices-in-python.html) tutorial
 
 
 ## Kubernetes random
