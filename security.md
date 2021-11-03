@@ -50,6 +50,7 @@
 * [RFC](https://www.rfc-editor.org/rfc-index.html)
 * [CVE security vulnerability database](https://www.cvedetails.com/)
 * [National Vulnerability Database](https://nvd.nist.gov/vuln)
+* [minimalistic security checklist for B2B software](https://mvsp.dev/mvsp.en/index.html)
 
 ### Auditing
 * https://wiki.gentoo.org/wiki/Project:Auditing
