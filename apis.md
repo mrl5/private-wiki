@@ -2,6 +2,7 @@
 
 ## Content
 - [Principles](#principles)
+- [API versioning](#api-versioning)
 - [API first approach](#api-first-approach)
 - [API design first vs API code first](#api-design-first-vs-api-code-first)
 - [Also check](#also-check)
@@ -30,6 +31,11 @@ Quotes from [Automated Style Guides for REST, GraphQL and gRPC] blog post by [Ph
 > - Keep version numbers out of the URL
 > - Version numbers in headers please
 > - Ban all versioning and demand evolution (prepare for battle)
+
+
+## API versioning
+1. https://apisyouwonthate.com/blog/api-versioning-has-no-right-way
+2. https://medium.com/good-api/api-change-management-2fe5bba32e9b
 
 
 ## API first approach
