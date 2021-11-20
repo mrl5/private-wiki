@@ -75,6 +75,7 @@ from [WeWork’s API Specification Workflow] blog post by [Phil Sturgeon]:
 
 ## Also check
 - https://openapi.tools/
+- linter for OAS: https://www.npmjs.com/package/@stoplight/spectral-cli
 
 
 [OpenAPI Specification]: https://swagger.io/specification/
