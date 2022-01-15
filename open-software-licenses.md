@@ -73,8 +73,8 @@ under which your code (or binary) can be reused in different projects.
 
 7. [They say that `7` is a magic
    number](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
-   so it's about time to choose between `MPL-2.0` (Copyleft) and `Apache-2.0`
-   (Copyfree a.k.a. permissive). **I don't want `Apache-2.0`** because:
+   so it's about time to choose between `MPL-2.0` and `Apache-2.0`. **I don't
+   want `Apache-2.0`** because:
    - it's not compatible with with `GPL-2.0` according to **[[G]]** (but it's
      worth mentioning that it's with `GPL-3.0` - see **[[H]]**)
 
