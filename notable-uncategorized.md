@@ -8,6 +8,7 @@
 - [Patterns of Effective Teams](#patterns-of-effective-teams)
 - [API first](#api-first)
 - [Kubernetes random](#kubernetes-random)
+- [PostgreSQL](#postgresql)
 
 
 ## Pieter Hintjens philosophy
@@ -91,7 +92,76 @@ North](https://www.youtube.com/watch?v=lvs7VEsQzKY)
 - [gloo-edge](https://docs.solo.io/gloo-edge/latest/)
 - [gloo-mesh](https://docs.solo.io/gloo-mesh/latest/)
 
+## PostgreSQL
+- howto partition live table w/o lock -> https://youtu.be/edQZauVU-ws?t=1777
+```sql
+BEGIN;
 
+-- #1 rename the huge table and its indices
+ALTER TABLE foo RENAME TO foo_legacy;
+ALTER INDEX foo_id RENAME TO foo_legacy_id;
+
+-- #2 create empty partitioned table & indices
+CREATE TABLE foo (
+    id uuid NOT NULL,
+    date timestamptz NOT NULL
+) PARTITION BY RANGE (date);
+CREATE INDEX foo_id ON foo(id);
+
+-- #3 create partition for new incoming data
+CREATE TABLE foo_y2023m01 PARTITION OF foo
+FOR VALUES FROM ('2023-01-01') TO ('2023-02-01');
+
+-- magic
+-- #4 attach old table as a partition
+DO $$
+DECLARE earliest timestamptz;
+DECLARE latest timestamptz;
+BEGIN
+
+SELECT min(date) INTO earliest FROM foo_legacy;
+latest := '2023-01-01'::timestamptz;
+
+-- HACK (only because we know and trust our data)
+ALTER TABLE foo_legacy
+ADD CONSTRAINT foo_legacy_date
+CHECK (date >= earliest AND date < latest)
+NOT VALID;
+
+UPDATE pg_constraint
+SET convalidated = true
+WHERE conname = 'foo_legacy_date';
+-- end of HACK
+
+ALTER TABLE foo
+ATTACH PARTITION foo_legacy
+FOR VALUES FROM (earliest) TO (latest);
+
+END
+$$ LANGUAGE PLPGSQL;
+COMMIT;
+```
+then e.g.during less busy hours
+```sql
+-- #5 move date into new table at our own pace
+CREATE TABLE foo_y2021 PARTITION OF foo
+FOR VALUES FROM ('2021-01-01') TO ('2022-01-01');
+
+WITH rows AS (
+    DELETE FROM foo_legacy f
+    WHERE (date >= '2021-01-01' AND date < '2022-01-01')
+    RETURNING f.*
+) INSERT INTO foo SELECT * FROM rows;
+
+CREATE TABLE foo_y2022 PARTITION OF foo
+FOR VALUES FROM ('2022-01-01') TO ('2023-01-01');
+
+WITH rows AS (
+    DELETE FROM foo_legacy f
+    WHERE (date >= '2022-01-01' AND date < '2023-01-01')
+    RETURNING f.*
+) INSERT INTO foo SELECT * FROM rows;
+```
 
 
 [Conway's law]: https://en.wikipedia.org/wiki/Conway%27s_law
