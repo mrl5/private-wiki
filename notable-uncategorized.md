@@ -93,7 +93,10 @@ North](https://www.youtube.com/watch?v=lvs7VEsQzKY)
 - [gloo-mesh](https://docs.solo.io/gloo-mesh/latest/)
 
 ## PostgreSQL
-- [HOT updates/fillfactor](https://www.cybertec-postgresql.com/en/what-is-fillfactor-and-how-does-it-affect-)
+- [HOT
+  updates](https://www.cybertec-postgresql.com/en/hot-updates-in-postgresql-for-better-performance/)
+  +
+  [fillfactor](https://www.cybertec-postgresql.com/en/what-is-fillfactor-and-how-does-it-affect-)
 - (by Jimmy Angelakos) howto partition live table w/o lock -> https://youtu.be/edQZauVU-ws?t=1777
 ```sql
 BEGIN;
