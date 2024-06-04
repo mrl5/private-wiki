@@ -9,6 +9,7 @@
 - [API first](#api-first)
 - [Kubernetes random](#kubernetes-random)
 - [PostgreSQL](#postgresql)
+- ["Design in Practice" by Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
 
 
 ## Pieter Hintjens philosophy
